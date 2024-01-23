@@ -6,22 +6,27 @@
   height: 7vh;
   width: 100vw;
 
-  background-image: linear-gradient(to bottom, rgb(255, 122, 122), rgb(196, 196, 196)) !important; 
- 
+  
   
   /* background-color: hwb(60 72% 15% / 0.996)32%, 79%, 0.996); */
   transition: all 0.5s ease-in-out;
   z-index: 100 !important;
   
   display: flex;
-  position: sticky;
+  display: inline-flexbox;
+  float: inline-start;
+  position: fixed;
 
   top: 0;
   overflow: hidden;
+  z-index: 100;
+
 }
+
 .extend {
   margin-bottom: 32vh;
 }
+
 .banner {
   margin-right: auto;
   font-size: 30px;
@@ -29,7 +34,8 @@
   width: 50%;
   color: rgb(61, 29, 61);
   padding-bottom: 5px;
-  z-index: 100;
+  z-index: 300;
+
 }
 .bannerLink .logoContainer {
   display: flex;
@@ -115,7 +121,7 @@
   #nav {
     display: flex;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     left: 0;
     top: 7vh;

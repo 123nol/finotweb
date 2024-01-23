@@ -68,3 +68,143 @@
   height: 50%;
   background-color: #f4f4cb;
 }
+.redirectLink {
+  text-decoration: none;
+  color: black;
+}
+.popup {
+  position: fixed;
+  top: 130px;
+  /* bottom: 40px; */
+  left: 40px;
+
+  padding: 40px;
+  z-index: 2;
+  width: 95%;
+  margin: auto;
+  background-color: white;
+
+  box-shadow: 0 0px 10px 10px rgb(197, 197, 197);
+  color: black;
+  height: 80%;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.popup-inner {
+  display: flex;
+  flex-direction: column;
+}
+.close-btn {
+  border: none;
+  background-color: transparent;
+  display: block;
+  text-align: end;
+}
+.popup-text {
+  display: flex;
+  gap: 20px;
+  line-height: 2;
+  margin: 30px auto;
+}
+.popup-text iframe {
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+  display: inline-block;
+}
+
+.popup-images {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+.popup-images img {
+  border-radius: 10px;
+  width: 420px;
+  height: 200px;
+  object-fit: cover;
+}
+@media screen and (max-width: 900px) {
+  .serviceCard {
+    height: 380px !important;
+  }
+  .serviceInfo h1 {
+    margin: 10px auto !important;
+  }
+  .productList {
+    flex-direction: column;
+  }
+  .productCard {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+  .productCard:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .productInfo {
+    position: absolute;
+    padding: 10px 30px;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+  }
+  .popup {
+    position: fixed;
+    top: 130px;
+    left: 10px;
+  }
+  .popup-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center !important;
+  }
+
+  .popup-text {
+    flex-direction: column;
+    width: 100%;
+  }
+  .popup-text iframe {
+    width: 100%;
+    height: auto;
+  }
+  .popup-images {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .popup-images img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .linkHeader p {
+    width: 95%;
+    margin: auto;
+  }
+  .productCard h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .productList {
+    width: 1600px;
+  }
+  .productCard {
+    position: relative;
+    width: 30%;
+  }
+
+  .productInfo {
+    position: absolute;
+    padding: 10px 30px;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+  }
+}

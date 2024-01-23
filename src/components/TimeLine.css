@@ -7,15 +7,15 @@
   height: fit-content;
   
   
-  border-top: solid 1px;
-  border-right: solid 1px;
+  /* border-top: solid 1px; */
+  border-right: solid 2px ;
   padding: 15px;
   padding-top: 5px;
   padding-right: 5px;
   width: 600px;
-  box-shadow:  12px -12px 40px #dcdcdc,
-  -12px 12px 40px #e4e4e4;
+  
   position: relative;
+  
   
   
   
@@ -54,7 +54,7 @@
 } */
 .milestones::before{
   content: "";
-  display:inline-block;
+  display: block;
   position: absolute;
   top: -7px;
   right: -7px;
@@ -62,7 +62,7 @@
   height: 15px;
   background-color: black;
   border-radius: 100%;
-
+  z-index: 10000 !important;
 }
 
 

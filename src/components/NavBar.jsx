@@ -9,15 +9,22 @@ import './NavBar.css';
 const NavBar = (props) => {
   const [clicked, setClick] = useState(false);
   // const [order, setOrder] = useState(1);
+  const[nav,setNav]=useState(false)
+  const handleScroll= ()=>{
+    window.scrollY>=80?setNav(true):setNav(false)
+}
+window.addEventListener('scroll', handleScroll)
 
   return (
-    <div className={clicked ? "bar extend" : "bar"}>
-      <div className="banner">
+    <div className={clicked ? "bar extend" : "bar"} 
+    style={{backgroundColor:nav===false?"transparent":"rgb(83, 121, 143)", boxShadow:nav===false?"none": "0 10px 20px 0px #9c9c98"}} 
+    >
+      <div className= "banner">
         <NavLink
           to="/"
           className="bannerLink links"
           onClick={() => {
-            props.change(1);
+          
             window.scrollTo(0, 0);
           }}
         >
@@ -38,7 +45,7 @@ const NavBar = (props) => {
           className={props.order === 1 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
-            props.change(1);
+         
             window.scrollTo(0, 0);
           }}
         >
@@ -46,15 +53,15 @@ const NavBar = (props) => {
         </NavLink>
 
         <HashLink
-          to="/#service"
+          to="/#events"
           className={props.order === 2 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
-            props.change(2);
+         
             window.scrollTo(0, 0);
           }}
         >
-          SERVICES
+          EVENTS
         </HashLink>
         {/* <HashLink
           to="/#product"
@@ -66,23 +73,23 @@ const NavBar = (props) => {
         >
           PRODUCTS
         </HashLink> */}
-        <NavLink
-          to="/project"
+        <HashLink
+          to="/#projects"
           className={props.order === 4 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
-            props.change(4);
+  
             window.scrollTo(0, 0);
           }}
         >
           PROJECTS
-        </NavLink>
+        </HashLink>
         <NavLink
           to="/contact"
           className={props.order === 5 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
-            props.change(5);
+          
             window.scrollTo(0, 0);
           }}
         >
