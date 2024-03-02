@@ -8,12 +8,12 @@ const Timeline = ({data}) => {
       <h3 style={{textAlign:"end"}}>{data.date}</h3>
       <div className='moremile'>
         <div>
-        <img src={data.img} alt=""/>
+        <img src={data.img} alt="" style={{borderRadius: "9%"}}/>
         <p style={{fontWeight:"200"}}>{data.detail}</p>
         </div>
         {data.img2 && 
         <div>
-        <img src={data.img2} alt=""/>
+        <img src={data.img2} alt="" style={{borderRadius: "9%"}}/>
         <p style={{fontWeight:"200"}}>{data.detail2}</p>
         </div>}
       </div>

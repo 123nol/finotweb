@@ -39,8 +39,8 @@
 }
 .milestones div img{
   width: 100%;
-  height: 120px;
-  object-fit: fit;
+  height: 160px;
+  object-fit: cover;
 }
 /* .milestones.flagdot{
   border-radius: 100%;

@@ -7,9 +7,22 @@ import { Projectsdata } from '../data/Projectsdata'
 import Projects from '../components/Projects'
 import Events from '../components/Events'
 import { Eventsdata } from '../data/Eventsdata'
+import { useState } from 'react'
+import Counter from '../components/Counter'
+
 const Landing = () => {
+  const [bottom, setBottom]= useState()
+  
+
   return (
-    <div className='landing'>
+    <div className='landing' onScroll={
+      (e)=>{
+        if(e.target.scrollheight-e.target.scrollTop == e.target.clientHeight){
+          setBottom(true)
+        }
+      }
+    
+    }>
       <Slider/>
       {/* <div className='about'>
         <div className='aboutinfo'> 
@@ -50,6 +63,7 @@ decades to become synonymous with their name. </p>
         
       
     </div>
+   
     <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',textAlign: "center", gap: "20px", marginTop: "30px"}} id="events">
           <h1 style={{color:"rgb(190, 135, 135)"}}>Events</h1>
           <p style={{fontSize: "23px", fontWeight: "300", width: "40%", }}> Some events we plan to conduct in the months to come </p>
@@ -57,6 +71,7 @@ decades to become synonymous with their name. </p>
         <div className='allevents'>
             {Eventsdata.map((data)=>(<Events key={data.id} data={data}/>))}
         </div>
+        <Counter scroll={bottom}/>
         
     </div>
   )

@@ -30,7 +30,7 @@ const Events = ({data}) => {
           
         </div>
         <div className='eventtitle'>
-          <h2 style={{fontSize:"50px", width: "80%"}}>{data.title}</h2>
+          <h2 style={{fontSize:"40px", width: "80%"}}>{data.title}</h2>
           <div className='inclusion'>
             <h5>{data.concern}</h5>
           </div>

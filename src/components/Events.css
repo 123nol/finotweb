@@ -6,6 +6,7 @@
   height: 30vh;
   background-image: linear-gradient(to bottom, rgb(206, 176, 176), white);
   align-self: center;
+  
  
   
   
@@ -15,6 +16,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: baseline;
   width: 15%;
   height: 100%;
   background-color: rgb(83, 121, 143);
@@ -64,8 +66,54 @@
   padding: 30px;
   justify-content: center !important;
   align-items: center !important;
+ 
+ padding-top: 70px;
   
   width: 50%;
   height: 100%;
   gap: 10px;
+  overflow-y: scroll;
+  
 }
+
+@media  screen and (max-width:1400px) {
+   .eventlist{
+    height: 36vh;
+    width: 97vw;
+   }
+   
+  
+}
+@media  screen and (max-width:1000px) {
+  .eventlist{
+   height: 25vh;
+   width: 97vw;
+  }
+  .eventdate h1{
+   font-size: 76px !important;
+  }
+  .eventtitle h2{
+    font-size: 30px !important;
+
+  }
+  .eventtitle{
+    width: 28%;
+  }
+  .eventdate{
+    width: 17%;
+  }
+  .eventdescription{
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 85px;
+   
+  }
+  .eventdescription p{
+    font-size: 13px;
+  }
+ 
+
+  }
+  
+

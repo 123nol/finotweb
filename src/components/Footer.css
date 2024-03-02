@@ -2,6 +2,7 @@
   width: 100%;
   z-index: 100 !important;
   background-color: #585857a2;
+  background-image: linear-gradient(to top, #585857a2, white);
   padding: 20px;
  
 }

@@ -1,0 +1,28 @@
+.parentcount{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 20px;
+  height: 25vh;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+
+}
+
+.counted{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 30%;
+  height: 90%;
+}
+.num{
+  font-size: 40px;
+  font-weight: 200;
+}

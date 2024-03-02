@@ -57,7 +57,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   overflow-x: scroll !important;
   gap: 60px;
 
@@ -67,7 +67,7 @@
   padding-top: 0;
   border-top: solid 1px ;
   z-index: -1 !important;
-  background-image: linear-gradient(to left, rgb(206, 176, 176), white)
+  background-image: linear-gradient(to left, rgba(206, 176, 176,0.3), white)
   
 
 }
