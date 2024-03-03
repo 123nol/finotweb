@@ -4,6 +4,12 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import "./Counter.css"
 const Counter = ({scroll}) => {
+  const [bottom, setBottom]= useState(false)
+  window.addEventListener("scroll", ()=>{
+    if(window.scrollY>=4000){
+      setBottom(true)
+    }
+  })
   useEffect(()=>{
     let valueDisplays = document.querySelectorAll(".num");
     let interval= 4000;
@@ -15,17 +21,20 @@ const Counter = ({scroll}) => {
     let duration = Math.floor(interval / (endValue*(index**20)));
     let counter = setInterval (function () {
     
-    
+    // if(bottom==true){
     startValue += 1;
     valueDisplay.textContent = startValue;
     
     if (startValue == endValue) {
     clearInterval (counter);
-    }
-    }, duration);
+    // }
+    }}, duration);
     });
+    // return(
+    //   clearInterval(counter)
+    // )
     
-  }, {})
+  }, {bottom})
 
 
 

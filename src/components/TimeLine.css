@@ -15,12 +15,18 @@
   width: 600px;
   
   position: relative;
+  overflow: hidden;
+  opacity: 0%;
+  transition: all 1s ease-in-out;
   
   
   
   
   
 
+}
+.appear{
+  opacity: 100%;
 }
 .moremile{
   display: flex ;
@@ -30,7 +36,8 @@
   justify-content: flex-end;
   align-items: flex-end;
   text-align: end;
-  
+  transform: translateY(150%);
+  transition: all 3s ease-in-out;
   
 }
 .milestones div{
@@ -63,6 +70,16 @@
   background-color: black;
   border-radius: 100%;
   z-index: 10000 !important;
+}
+/* @keyframes meseqel{
+  from
+    {opacity: 0%;}
+  to{
+    opacity: 100%;
+  }
+} */
+.draw{
+  transform: translateY(0%);
 }
 
 
