@@ -9,6 +9,8 @@ import Events from '../components/Events'
 import { Eventsdata } from '../data/Eventsdata'
 import { useState } from 'react'
 import Counter from '../components/Counter'
+import { board } from '../data/Teamdata'
+import Team from '../components/Team'
 
 const Landing = () => {
   const [bottom, setBottom]= useState()
@@ -34,7 +36,7 @@ const Landing = () => {
 
         </div>
       </div> */}
-      {/* <div className='timeplot'> */}
+      <div className='timeplot'>
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'end',textAlign: "center", gap: "20px", margin: "30px", width: "95%"}} id="history">
           <h1 style={{color:"rgb(190, 135, 135)", fontSize: "40px"}}>Our History</h1>
           <p style={{fontSize: "23px", fontWeight: "400" }}> Milestones in our history that have made this journey special. </p>
@@ -45,7 +47,7 @@ const Landing = () => {
           )
           )}
 
-        {/* </div> */}
+        </div>
       
     </div>
     <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',textAlign: "center", gap: "20px", marginTop: "30px"}} id="projects">
@@ -70,6 +72,15 @@ decades to become synonymous with their name. </p>
         </div>
         <div className='allevents'>
             {Eventsdata.map((data)=>(<Events key={data.id} data={data}/>))}
+        </div>
+        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',textAlign: "center", gap: "20px", marginTop: "30px", width:"100vw"}}>
+        <h1 style={{color:"rgb(190, 135, 135)"}}>Meet The Team</h1>
+          <p style={{fontSize: "23px", fontWeight: "300", width: "40%", }}> Our hardworking Board Of Directors </p>
+          
+
+        <div className='landteam'>
+          {board.map(data=>(<Team key={data.id} data={data}/>))}
+        </div>
         </div>
         <Counter scroll={bottom}/>
         

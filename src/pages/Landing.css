@@ -48,25 +48,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  width: 100vw;
   /* width: 100vw; */
+  gap: 20px;
   
 }
 .timeline{
-  display: flex;
-  flex-direction: row;
+  display: flex !important;
+  
   align-items: flex-start;
-  justify-content: center;
-  width: 100vw;
+  justify-content: center !important;
+  width: 100%;
   overflow-x: scroll !important;
-  gap: 60px;
+  gap: 100px;
+ /* padding-left: 20vw !important; */
 
   
   
   padding: 20px;
   padding-top: 0;
   border-top: solid 1px ;
-  z-index: -1 !important;
+
+  
   /* background-image: linear-gradient(to left, rgba(206, 176, 176,0.3), white) */
   
 
@@ -93,4 +96,14 @@
   align-items: center;
   gap: 60px;
   width: 100vw;
+}
+.landteam{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  margin: 50px;
+  gap: 50px;
+ 
 }

@@ -50,13 +50,13 @@ const Counter = ({scroll}) => {
       <div className='counted compro'>
       <Checklist style={{width: "50px", height:"50px"}}/>
         <div className='num' data-val="120">0</div>
-        <div style={{fontSize: "40px", fontWeight:"bold"}}>PROJECTS COMPLETED</div>
+        <div style={{fontSize: "40px", fontWeight:"bold"}}>PROJECTS DONE</div>
 
       </div>
       <div className='counted fundraised'>
       <Paid style={{width: "50px", height:"50px"}}/>
-      <div style={{display: "flex", gap: "5px", justifyContent: "center", alignItems: "center"}}>
-        <div className='num' data-val="2000000" style={{width:"120px"}}>0</div>
+      <div style={{display: "flex", gap: "10px", justifyContent: "center", alignItems: "center"}}>
+        <div className='num' data-val="20000" style={{width:"120px"}}>0</div>
         
         <div style={{fontSize: "40px", fontWeight:"200", width:"fit-content"}}>ETB</div>
         </div>

@@ -61,7 +61,7 @@ window.addEventListener('scroll', handleScroll)
             window.scrollTo(0, 0);
           }}
         >
-          EVENTS
+          PROJECTS
         </HashLink>
         {/* <HashLink
           to="/#product"
@@ -82,7 +82,7 @@ window.addEventListener('scroll', handleScroll)
             window.scrollTo(0, 0);
           }}
         >
-          PROJECTS
+          EVENTS
         </HashLink>
         <NavLink
           to="/contact"
@@ -93,7 +93,7 @@ window.addEventListener('scroll', handleScroll)
             window.scrollTo(0, 0);
           }}
         >
-          CONTACT
+          TEAM
         </NavLink>
       </nav>
 

@@ -10,7 +10,7 @@
   
   /* background-color: hwb(60 72% 15% / 0.996)32%, 79%, 0.996); */
   transition: all 0.5s ease-in-out;
-  z-index: 100 !important;
+  z-index: 1000 !important;
   
   display: flex;
   display: inline-flexbox;
@@ -19,7 +19,7 @@
 
   top: 0;
   overflow: hidden;
-  z-index: 100;
+  
 
 }
 

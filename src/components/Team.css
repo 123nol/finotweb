@@ -1,3 +1,60 @@
 .teamcard{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 360px;
+  width: 200px !important;
   
+  
+  
+}
+.teamimg{
+  border-radius: 100%;
+  height: 50%;
+  background-color: black;
+ 
+  
+ 
+}
+.teamdesc:nth-child(1){
+  font-size: 50px !important;
+  font-weight: bold !important;
+
+
+}
+.teamcard img{
+  height: 50%;
+  width: 95%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.teamlink{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 40%;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+
+  
+}
+.teamdesc{
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ 
+
+
+}
+.teamdesc h1{
+  height: 33%;
+}
+.teamdesc h2{
+  height: 33%;
 }
