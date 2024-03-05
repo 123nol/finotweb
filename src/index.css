@@ -17,3 +17,7 @@ html {
 .landing::-webkit-scrollbar{
   display: none !important;
 }
+.main{
+  width: 98.7vw !important;
+  overflow-x: hidden !important;
+}

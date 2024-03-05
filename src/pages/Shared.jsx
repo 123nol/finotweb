@@ -11,7 +11,7 @@ const Shared = () => {
   // window.addEventListener('scroll', handleScroll)
   return (
     <>
-    <div  >
+    <div  className= "main" style={{width:"100vw", overflowX:"hidden"}}>
       <NavBar />
       <Outlet/>
       <Footer/>
