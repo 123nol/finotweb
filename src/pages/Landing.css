@@ -2,8 +2,11 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  width: 100vw !important;
+  width: 99vw !important;
+  
   overflow-x: hidden !important;
+  align-self: center;
+ 
 
   padding-bottom: 30px;
 }
@@ -57,7 +60,7 @@
   display: flex !important;
   
   align-items: flex-start;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   width: 100%;
   overflow-x: scroll !important;
   gap: 100px;
@@ -105,5 +108,6 @@
   align-items: center;
   margin: 50px;
   gap: 50px;
+  flex-wrap: wrap;
  
 }

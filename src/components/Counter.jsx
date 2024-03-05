@@ -12,7 +12,7 @@ const Counter = ({scroll}) => {
   })
   useEffect(()=>{
     let valueDisplays = document.querySelectorAll(".num");
-    let interval= 4000;
+    let interval= 5000;
     
     valueDisplays.forEach((valueDisplay, index) => {
     let startValue = 0;

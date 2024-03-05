@@ -53,7 +53,7 @@ window.addEventListener('scroll', handleScroll)
         </NavLink>
 
         <HashLink
-          to="/#events"
+          to="/#projects"
           className={props.order === 2 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
@@ -74,7 +74,7 @@ window.addEventListener('scroll', handleScroll)
           PRODUCTS
         </HashLink> */}
         <HashLink
-          to="/#projects"
+          to="/#events"
           className={props.order === 4 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
@@ -84,8 +84,8 @@ window.addEventListener('scroll', handleScroll)
         >
           EVENTS
         </HashLink>
-        <NavLink
-          to="/contact"
+        <HashLink
+          to="/#teams"
           className={props.order === 5 ? "links tap" : "links"}
           onClick={() => {
             setClick(false);
@@ -94,7 +94,7 @@ window.addEventListener('scroll', handleScroll)
           }}
         >
           TEAM
-        </NavLink>
+        </HashLink>
       </nav>
 
       <div

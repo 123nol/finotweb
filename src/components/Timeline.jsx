@@ -19,11 +19,14 @@ const Timeline = ({data}) => {
       <div className={draw?'moremile draw':'moremile'}>
         <div>
         <img src={data.img} alt="" style={{borderRadius: "5%"}}/>
+        <p style={{fontWeight:"bold", textTransform:"uppercase"}}>{data.title}</p>
+        
         <p style={{fontWeight:"300"}}>{data.detail}</p>
         </div>
         {data.img2 && 
         <div>
         <img src={data.img2} alt="" style={{borderRadius: "5%"}}/>
+        <p style={{fontWeight:"bold", textTransform:"uppercase"}}>{data.title}</p>
         <p style={{fontWeight:"300"}}>{data.detail2}</p>
         </div>}
       </div>
