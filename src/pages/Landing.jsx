@@ -19,7 +19,7 @@ const Landing = () => {
   return (
     <div className='landing' onScroll={
       (e)=>{
-        if(e.target.scrollheight-e.target.scrollTop == e.target.clientHeight){
+        if(e.target.scrollheight-e.target.scrollTop === e.target.clientHeight){
           setBottom(true)
         }
       }

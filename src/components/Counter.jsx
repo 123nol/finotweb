@@ -1,15 +1,15 @@
 import React from 'react'
 import { People, Paid, Checklist } from '@mui/icons-material';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { useEffect } from 'react';
 import "./Counter.css"
 const Counter = ({scroll}) => {
-  const [bottom, setBottom]= useState(false)
-  window.addEventListener("scroll", ()=>{
-    if(window.scrollY>=4000){
-      setBottom(true)
-    }
-  })
+  // const [bottom, setBottom]= useState(false)
+  // window.addEventListener("scroll", ()=>{
+  //   if(window.scrollY>=4000){
+  //     setBottom(true)
+  //   }
+  // })
   useEffect(()=>{
     let valueDisplays = document.querySelectorAll(".num");
     let interval= 5000;
@@ -25,7 +25,7 @@ const Counter = ({scroll}) => {
     startValue += 1;
     valueDisplay.textContent = startValue;
     
-    if (startValue == endValue) {
+    if (startValue === endValue) {
     clearInterval (counter);
     // }
     }}, duration);
@@ -34,7 +34,7 @@ const Counter = ({scroll}) => {
     //   clearInterval(counter)
     // )
     
-  }, {bottom})
+  }, [])
 
 
 

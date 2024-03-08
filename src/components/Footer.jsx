@@ -2,7 +2,7 @@ import { AiOutlineRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import MailIcon from "@mui/icons-material/Mail";
-import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+
 import { Twitter, Instagram,  } from "@mui/icons-material";
 
 import "./Footer.css"
@@ -86,11 +86,11 @@ const Footer = () => {
 
             <li>
               <Instagram className="icon" />
-              <p> <a href="#" style={{textDecoration:"none", color:"black"}}>Instagram </a></p>
+              <p> <a href="www.google.com" style={{textDecoration:"none", color:"black"}}>Instagram </a></p>
             </li>
             <li>
               <Twitter className="icon" />
-              <p> <a href="#" style={{textDecoration:"none", color:"black"}}>Twitter</a></p>
+              <p> <a href="www.google.com" style={{textDecoration:"none", color:"black"}}>Twitter</a></p>
             </li>
             <li>
               <MailIcon className="icon" />

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./TimeLine.css"
-import { Timelinedata } from '../data/Timelineplot'
+
 import { useState } from 'react'
 
 const Timeline = ({data}) => {
