@@ -52,7 +52,7 @@ const Landing = () => {
     </div>
     <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',textAlign: "center", gap: "20px", marginTop: "30px"}} >
           <h1 style={{color:"rgb(190, 135, 135)"}} id="projects">Our Signatutre Projects</h1>
-          <p style={{fontSize: "23px", fontWeight: "300", width: "40%", }}> RCC is recognized for the success of their signature projects, which have grown over the
+          <p style={{fontSize: "19px", fontWeight: "400", width: "90%", }}> RCF is recognized for the success of their signature projects, which have grown over the
 decades to become synonymous with their name. </p>
         </div>
         <div className='prolist'>
@@ -68,7 +68,7 @@ decades to become synonymous with their name. </p>
    
     <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center',textAlign: "center", gap: "20px", marginTop: "30px"}} >
           <h1 style={{color:"rgb(190, 135, 135)"}} id="events">Events</h1>
-          <p style={{fontSize: "23px", fontWeight: "300", width: "40%", }}> Some events we plan to conduct in the months to come </p>
+          <p style={{fontSize: "19px", fontWeight: "400", width: "90%", }}> Some events we plan to conduct in the months to come </p>
         </div>
         <div className='allevents'>
             {Eventsdata.map((data)=>(<Events key={data.id} data={data}/>))}

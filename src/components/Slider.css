@@ -69,3 +69,35 @@
   width: 45px; 
   height: 45px;
 }
+#bigslide{
+  font-size:  120px !important;
+   font-weight: 900 !important;
+}
+#slidechild{
+  font-size: 25px;
+  font-weight: 400;
+}
+
+@media screen and (max-width:1300px) {
+  #bigslide{
+    font-size: 90px !important;
+  }
+  #slidechild{
+    font-size: 18px !important;
+    font-weight: 600;
+  }
+  
+}
+@media screen and (max-width:800px) {
+  #bigslide{
+    font-size: 70px !important;
+  }
+  #slidechild{
+    font-size: 15px !important;
+    font-weight: bold !important;
+  }
+  .slidedesc{
+    left: 40px !important;
+  }
+  
+}

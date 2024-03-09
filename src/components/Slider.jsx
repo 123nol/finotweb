@@ -21,22 +21,22 @@ const Slider = () => {
         <div className='container' style={{transform : `translateX(-${state*100}vw)`}}>
           <div className='slidecont ' >
               <div className='slidedesc'>
-                <div style={{fontSize: "120px", fontWeight: "bold"}}>SERVICE ABOVE SELF</div>
-                <div style={{fontSize: "25px", fontWeight: "400"}}>We are passionate about helping others</div>
+                <div id="bigslide" >SERVICE ABOVE SELF</div>
+                <div  id="slidechild"style={{fontSize: "25px", fontWeight: "400"}}>We are passionate about helping others</div>
               </div>
              <img className="slideimg" src={data[0]} alt=""/>
           </div >
           <div className='slidecont' >
             <div className='slidedesc'>
-            <div style={{fontSize: "120px", fontWeight: "bold"}}>SERVICE ABOVE SELF</div>
-                <div style={{fontSize: "25px", fontWeight: "400"}}>We are passionate about helping others</div>
+            <div id="bigslide"style={{fontSize: "120px", fontWeight: "bold"}}>SERVICE ABOVE SELF</div>
+                <div id="slidechild"style={{fontSize: "25px", fontWeight: "400"}}>We are passionate about helping others</div>
             </div>
              <img className="slideimg" src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?cs=srgb&dl=pexels-pixabay-36717.jpg&fm=jpg" alt="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?cs=srgb&dl=pexels-pixabay-36717.jpg&fm=jpg"/>
           </div>
           <div className='slidecont'>
               <div className='slidedesc'>
-                <div style={{fontSize: "120px", fontWeight: "bold"}}>SERVICE ABOVE SELF</div>
-                <div style={{fontSize: "25px", fontWeight: "400"}}>We are passionate about helping others</div>
+                <div id="bigslide" style={{fontSize: "120px", fontWeight: "bold"}}>SERVICE ABOVE SELF</div>
+                <div id="slidechild" style={{fontSize: "25px", fontWeight: "400"}}>We are passionate about helping others</div>
                 </div>
               <img className="slideimg" src={data[2]} alt=""/>
           </div>

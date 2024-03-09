@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 50px;
   width: 100vw !important;
+  height: fit-content !important;
   
   overflow-x: clip !important;
   align-self: center;
@@ -55,6 +56,16 @@
   /* width: 100vw; */
   gap: 20px;
   
+  
+}
+@media screen and (max-width:500px){
+  .timeplot{
+    height: fit-content !important;
+  }
+  .timeline{
+    gap: 60px !important;
+  }
+  
 }
 .timeline{
   display: flex !important;
@@ -91,6 +102,16 @@
   
   padding: 20px;
   
+  
+}
+@media screen and (max-width:930px){
+  .prolist
+
+ { height: 80vh;
+  overflow-y: scroll;
+  box-shadow: 10px;
+
+}
   
 }
 .allevents{

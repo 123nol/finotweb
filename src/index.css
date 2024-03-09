@@ -18,6 +18,6 @@ html {
   display: none !important;
 }
 .main{
-  width: 98.7vw !important;
+  /* width: 98.7vw !important; */
   overflow-x: hidden !important;
 }
