@@ -12,6 +12,9 @@
   
 
 }
+/* .mobileevnet{
+  display: none !important;
+} */
 .eventdate{
   display: flex;
   flex-direction: column;

@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Events.css"
 import { useEffect } from 'react';
+import MobileEvent from './MobileEvent';
 const Events = ({data}) => {
   useEffect(() => {
     const events = document.querySelectorAll(".eventdesc");
@@ -56,6 +57,11 @@ const Events = ({data}) => {
           </div>
 
         </div>
+        </div>
+        <div className='mobileevent'>
+          <MobileEvent data={data}/>
+
+
         </div>
     </>
     
