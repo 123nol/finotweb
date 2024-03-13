@@ -136,3 +136,23 @@
   flex-wrap: wrap;
  
 }
+/* .custom-shape-divider-top-1710176385 {
+  position: absolute;
+  bottom: -167px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1710176385 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 157px;
+}
+
+.custom-shape-divider-top-1710176385 .shape-fill {
+  fill: #dbbbbb;
+  filter: blur(3px);
+} */

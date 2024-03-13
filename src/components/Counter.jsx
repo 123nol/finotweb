@@ -43,7 +43,7 @@ const Counter = ({scroll}) => {
       <div className='counted actmem'>
       <People style={{width: "50px", height:"50px"}}/>
         
-        <div className='num' data-val="300">0</div>
+        <div className='num' data-val="600">0</div>
         <div style={{fontSize: "40px", fontWeight:"bold"}}>ACTIVE MEMBERS</div>
 
       </div>
@@ -56,7 +56,7 @@ const Counter = ({scroll}) => {
       <div className='counted fundraised'>
       <Paid style={{width: "50px", height:"50px"}}/>
       <div style={{display: "flex", gap: "10px", justifyContent: "center", alignItems: "center"}}>
-        <div className='num' data-val="20000" style={{width:"120px"}}>0</div>
+        <div className='num' data-val="100000" style={{width:"120px"}}>0</div>
         
         <div style={{fontSize: "40px", fontWeight:"200", width:"fit-content"}}>ETB</div>
         </div>
